@@ -1,7 +1,7 @@
 # Project-Dead_Reckoning_Robot
 This project includes a self-autonomous robot which uses dead-reckoning as a localization technique to identify its current position using pre-determined measures like speed, distance and time.
 
-# Project Overview
+## Project Overview
 This project aims to develop a probabilistic mapping system for a robot powered by an ESP32 microcontroller and equipped with a VL53L0X distance sensor. It facilitates real-time, interactive mapping of the robot's environment using a log-odds probability method, and visually tracks the robot's position and surroundings during operation.
 
 # Hardware Requirements
