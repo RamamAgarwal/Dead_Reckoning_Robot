@@ -4,13 +4,13 @@ This project includes a self-autonomous robot which uses dead-reckoning as a loc
 ## Project Overview
 This project aims to develop a probabilistic mapping system for a robot powered by an ESP32 microcontroller and equipped with a VL53L0X distance sensor. It facilitates real-time, interactive mapping of the robot's environment using a log-odds probability method, and visually tracks the robot's position and surroundings during operation.
 
-# Hardware Requirements
+## Hardware Requirements
 ESP32 Microcontroller
 VL53L0X Distance Sensor
 DC Motors with Motor Driver
 Wireless Connectivity
 
-# Software Requirements
+## Software Requirements
 ESP32 Firmware
 Enables the ESP32 to function as a Wi-Fi access point
 Manages motor controls, sensor data acquisition, and command processing
@@ -19,14 +19,14 @@ Displays a real-time interactive grid of the robot's environment
 Performs probabilistic mapping of the surroundings
 Allows robot movement via keyboard controls
 
-# Key Features
+## Key Features
 Log-odds Mapping Algorithm: Uses probabilistic logic to represent the environment's state based on sensor data.
 Interactive Grid Visualization: A real-time graphical representation of the robot's environment, with dynamic updates.
 Real-Time Data Processing: Continuous updates to the robot's position and sensor readings.
 Customizable Parameters: Allows users to adjust grid size, cell size, sensor settings, and mapping tolerances.
 Visualized Robot Movement: Tracks the robot’s position on the grid as it moves.
 
-# Prerequisites
+## Prerequisites
 Hardware
 ESP32 Development Board
 VL53L0X Distance Sensor
@@ -35,13 +35,13 @@ DC Motors
 Software
 Python 3.7 or higher
 
-# Required Libraries:
+## Required Libraries:
 matplotlib
 numpy
 socket
 keyboard
 
-# Usage
+## Usage
 Setting up the ESP32
 Enter the Wi-Fi credentials in the ESP32 firmware.
 Upload the firmware to the ESP32.
