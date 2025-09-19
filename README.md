@@ -1,79 +1,144 @@
-# Project-Dead_Reckoning_Robot
-This project includes a self-autonomous robot which uses dead-reckoning as a localization technique to identify its current position using pre-determined measures like speed, distance and time.
+🚗 Project-Dead_Reckoning_Robot 🤖
 
-## Project Overview
-This project aims to develop a probabilistic mapping system for a robot powered by an ESP32 microcontroller and equipped with a VL53L0X distance sensor. It facilitates real-time, interactive mapping of the robot's environment using a log-odds probability method, and visually tracks the robot's position and surroundings during operation.
+Welcome to the Dead Reckoning Robot project! This exciting initiative demonstrates a self-autonomous robot that uses dead-reckoning as its primary localization technique. By leveraging speed, distance, and time, the robot estimates its position and navigates in an environment. It's powered by an ESP32 microcontroller and equipped with a VL53L0X distance sensor, all working together to build a probabilistic mapping system.
 
-## Hardware Requirements
-ESP32 Microcontroller
-VL53L0X Distance Sensor
-DC Motors with Motor Driver
-Wireless Connectivity
+📜 Project Overview
 
-## Software Requirements
+This project aims to create an interactive and real-time mapping system for a robot, utilizing probabilistic methods to track its position and surroundings. By combining the ESP32 microcontroller and VL53L0X sensor, we use the log-odds probability technique to generate an interactive environment map. The robot's journey is visualized in real-time on a grid, giving users full control and insight into its movements and mapped surroundings.
+
+🛠️ Hardware Requirements
+
+ESP32 Microcontroller - The brain of the robot!
+
+VL53L0X Distance Sensor - Measures distance for environment scanning.
+
+DC Motors with Motor Driver - Enables movement of the robot.
+
+Wireless Connectivity - For communication between the robot and the Python application.
+
+💻 Software Requirements
+
 ESP32 Firmware
-Enables the ESP32 to function as a Wi-Fi access point
-Manages motor controls, sensor data acquisition, and command processing
+
+Makes the ESP32 function as a Wi-Fi access point
+
+Manages motor control, sensor data acquisition, and command processing
+
 Python Mapping Application
-Displays a real-time interactive grid of the robot's environment
-Performs probabilistic mapping of the surroundings
-Allows robot movement via keyboard controls
 
-## Key Features
-Log-odds Mapping Algorithm: Uses probabilistic logic to represent the environment's state based on sensor data.
-Interactive Grid Visualization: A real-time graphical representation of the robot's environment, with dynamic updates.
-Real-Time Data Processing: Continuous updates to the robot's position and sensor readings.
-Customizable Parameters: Allows users to adjust grid size, cell size, sensor settings, and mapping tolerances.
-Visualized Robot Movement: Tracks the robot’s position on the grid as it moves.
+Real-time interactive mapping of the robot’s environment
 
-## Prerequisites
+Visualizes robot's movement and surroundings
+
+✨ Key Features
+
+Log-odds Mapping Algorithm
+Uses probabilistic logic to represent the environment based on sensor data.
+
+Interactive Grid Visualization
+A real-time graphical representation of the robot's environment, constantly updated.
+
+Real-Time Data Processing
+Continuous updates for position tracking and sensor readings.
+
+Customizable Parameters
+Adjust grid size, cell size, sensor settings, and mapping tolerances to suit your needs.
+
+Visualized Robot Movement
+Track the robot’s position on the grid as it navigates in real time.
+
+📋 Prerequisites
 Hardware
+
 ESP32 Development Board
+
 VL53L0X Distance Sensor
-Motor Driver
+
+Motor Driver (L298N or equivalent)
+
 DC Motors
+
 Software
-Python 3.7 or higher
 
-## Required Libraries:
-matplotlib
-numpy
-socket
-keyboard
+Python 3.7+
 
-## Usage
-Setting up the ESP32
-Enter the Wi-Fi credentials in the ESP32 firmware.
-Upload the firmware to the ESP32.
-Ensure the ESP32 is broadcasting a Wi-Fi network.
-Running the Mapping Program
+Required Libraries
+pip install matplotlib numpy socket keyboard
+
+⚙️ Setup Instructions
+1. Setting up the ESP32
+
+Enter your Wi-Fi credentials in the ESP32 firmware.
+
+Upload the firmware to your ESP32 board.
+
+The ESP32 will now broadcast its own Wi-Fi network.
+
+2. Running the Mapping Program
+
 Connect to the ESP32’s Wi-Fi network.
+
 Execute the Python script:
-bash
-Copy
+
 python robot_mapper.py
+
+
 Follow the on-screen instructions to:
+
 Configure mapping parameters
-Control the robot’s movement
-Visualize the mapping process
-Keyboard Controls
+
+Control the robot's movement
+
+Visualize the mapping process in real-time
+
+🎮 Keyboard Controls
+
 Arrow Keys: Move the robot
-'R': Capture a sensor reading
-'ESC': Stop the robot and exit the program
-Customizable Mapping Settings
-The application provides options to configure:
 
-Grid size and resolution
-Sensor position
-Initial probability values
-Tolerance for measurement uncertainty
-Probabilistic Mapping Process
-The system applies log-odds transformation to:
+R: Capture a sensor reading
 
-Address sensor inaccuracies
-Adjust cell probabilities based on readings
-Represent the environment probabilistically
-Visualization Features
-Dynamic grid display
-Color-coded probability heatmap for environment representation
-Real-time position updates of the robot on the map
+ESC: Stop the robot and exit the program
+
+⚙️ Customizable Mapping Settings
+
+The application allows you to fine-tune various parameters, including:
+
+Grid Size: Adjust the map's scale.
+
+Sensor Position: Fine-tune the sensor’s location on the robot.
+
+Initial Probability Values: Set starting values for grid cells.
+
+Measurement Uncertainty: Tweak tolerance for sensor inaccuracies.
+
+🔎 Probabilistic Mapping Process
+
+The system utilizes a log-odds transformation to:
+
+Handle sensor inaccuracies: Ensures more reliable mapping.
+
+Adjust cell probabilities based on real-time sensor data.
+
+Map the environment probabilistically, accounting for uncertainty in readings.
+
+📊 Visualization Features
+
+Dynamic Grid Display: Real-time map updates as the robot moves.
+
+Color-coded Heatmap: Represent the environment with probability values.
+
+Real-time Position Updates: Track the robot’s location as it navigates.
+
+🌱 Future Enhancements
+
+This project is a work-in-progress! Potential improvements could include:
+
+Adding more sensors for better mapping accuracy.
+
+Implementing path planning and obstacle avoidance.
+
+Enhancing the user interface for more intuitive controls.
+
+🛠️ Contributing
+
+We welcome contributions! Feel free to fork this project and open pull requests. If you have any ideas for improving the robot’s performance or the software, please don’t hesitate to share!
